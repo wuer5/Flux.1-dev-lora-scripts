@@ -5,14 +5,14 @@ import torchvision.transforms as transforms
 
 
 class MyDataset(Dataset):
-    def __init__(self, dataset_json_path, resluotion=512):
+    def __init__(self, dataset_json_path, resolution=512):
         super().__init__()
         with open(dataset_json_path, "r") as f:
             self.items = json.load(f)
         self.resluotion = resluotion
         self.transform = transforms.Compose(
             [
-                transforms.Resize((resluotion, resluotion)),
+                transforms.Resize((resolution, resolution)),
                 transforms.ToTensor(),
                 transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5]),
             ]
