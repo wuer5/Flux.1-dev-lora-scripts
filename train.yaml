@@ -1,0 +1,37 @@
+# Control LoRA Training Configuration
+pretrained_model_name_or_path: black-forest-labs/FLUX.1-dev  # required
+fixed_prompts: ["A beatiful girl with a sweat face"]
+variant: null
+revision: null
+output_dir: output_lora
+seed: 123456
+resolution: 512
+train_batch_size: 4
+num_train_epochs: 1
+max_train_steps: 5000
+checkpointing_steps: 500
+resume_from_checkpoint: null
+rank: 16
+use_lora_bias: false
+gaussian_init_lora: false
+gradient_accumulation_steps: 1
+gradient_checkpointing: false
+learning_rate: 5e-6
+scale_lr: false
+lr_scheduler: constant
+lr_warmup_steps: 500
+lr_num_cycles: 1
+lr_power: 1.0
+use_8bit_adam: false
+dataloader_num_workers: 0
+adam_beta1: 0.9
+adam_beta2: 0.999
+adam_weight_decay: 1e-2
+adam_epsilon: 1e-08
+max_grad_norm: 1.0
+logging_dir: "logs"
+allow_tf32: false
+mixed_precision: bf16
+guidance_scale: 1.0
+upcast_before_saving: false
+offload: false
