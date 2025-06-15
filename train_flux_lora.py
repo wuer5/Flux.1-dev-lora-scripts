@@ -315,7 +315,7 @@ def main(args):
 
     # Prepare dataset and dataloader.
     train_dataset = MyDataset(
-        dataset_json_path=args.dataset_json_path, resluotion=args.resluotion
+        dataset_json_path=args.dataset_json_path, resluotion=args.resolution
     )
     train_dataloader = torch.utils.data.DataLoader(
         train_dataset,
