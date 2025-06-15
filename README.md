@@ -1,5 +1,7 @@
 # Flux.1-dev-lora-scripts
 
+It is easy for you to LoRA your Flux.1-dev using this script!
+
 This repository provides a Flux.1-dev LoRA training script modified from the ```xflux``` and ```diffusers``` repositories.
 
 You only need the ```diffusers``` library for Flux.1-dev LoRA training. We will release other fine-tuning methods, such as ControlNet.
