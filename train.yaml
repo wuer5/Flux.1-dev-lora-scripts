@@ -8,7 +8,7 @@ seed: 123456
 resolution: 512
 train_batch_size: 1
 num_train_epochs: 99999   # See max_train_steps is ok!
-max_train_steps: 5000
+max_train_steps: 5000     
 checkpointing_steps: 500
 resume_from_checkpoint: null
 rank: 16
